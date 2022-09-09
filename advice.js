@@ -7,10 +7,10 @@ function generate_advice(){
     console.log("Started");
     fetch(advice_url)
     .then(response => response.json())
-    .then(response1 => {
-        console.log(response1);
-        advice_disp.innerHTML = '"' + response1.slip.advice + '"';
-        advice_id = 0 + response1.slip.id;
+    .then(commit => {
+        console.log(commit);
+        advice_disp.innerHTML = '"' + commit.slip.advice + '"';
+        advice_id = 0 + commit.slip.id;
         advice_slip_id.innerHTML = "Advice #" + advice_id;
     })
     
