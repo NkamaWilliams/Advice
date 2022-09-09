@@ -1,0 +1,78 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: hsl(218, 23%, 16%);
+    min-height: 500px;
+}
+
+#advice{
+    margin: auto;
+    margin-top: 90px;
+    padding: 15px 0;
+    width: 470px;
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 20px;
+    font-weight: 800;
+    position: relative;
+}
+
+#advice p{
+    width: 85%;
+    margin: auto;
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+
+#advice h1{
+    color: hsl(150, 100%, 66%);
+    font-size: 16px;
+}
+
+.divider-desk{
+    width: 80%;
+}
+
+.rand-advice-btn{
+    background-color: hsl(150, 100%, 66%);
+    outline: none;
+    border: none;
+    padding: 13px;
+    border-radius: 25px;
+    opacity: 0.8;
+    position: relative;
+    bottom: -40px;
+}
+
+.rand-advice-btn:hover{
+    box-shadow: 0 4px 18px 3px hsl(150, 100%, 66%);
+}
+
+.rand-advice-btn:active{
+    opacity: 1;
+
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 469px){
+    #advice{
+        width: 90%;
+    }
+
+    .divider-desk{
+        display: none;
+    }
+
+    .divider-phone{
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+}
+
+.attribution{
+    margin: 50px 0;
+}
