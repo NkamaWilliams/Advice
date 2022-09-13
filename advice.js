@@ -1,11 +1,11 @@
 function generate_advice(){
-    let advice_disp = document.getElementById("disp");
-    let advice_slip_id = document.getElementById("slip-id");
-    let advice_url = "https://api.adviceslip.com/advice";
-    let advice = "";
-    let advice_id = 0;
+    const advice_disp = document.getElementById("disp");
+    const advice_slip_id = document.getElementById("slip-id");
+    const advice_url = "https://api.adviceslip.com/advice";
+    const advice = "";
+    const advice_id = 0;
     console.log("Started");
-    fetch(advice_url)
+    fetch(advice_url, {cache : 'no-cache'})
     .then(response => response.json())
     .then(commit => {
         console.log(commit);
